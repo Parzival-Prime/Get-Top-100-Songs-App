@@ -91,7 +91,7 @@ with st.container(height=308):
     with col1:
         profile_image_html = f'''
         <img src='{user['images'][0]['url']}' 
-        style="height:17rem; width:13rem; border-radius:6px;">
+        style="height:17rem; width:15rem; border-radius:6px;">
 '''
         st.markdown(profile_image_html, unsafe_allow_html=True)
     with col2:
