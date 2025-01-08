@@ -85,13 +85,13 @@ def create_new_playlist_of_top_100_songs_of_specific_date(date, playlist_name, p
 st.title("Music Time Machine App")
 st.divider()
 
-with st.container(height=308):
+with st.container(height=300):
     col1, col2 = st.columns([0.3, 0.7], gap='medium')
     user = sp.current_user()
     with col1:
         profile_image_html = f'''
         <img src='{user['images'][0]['url']}' 
-        style="height:17rem; width:15rem; border-radius:6px;">
+        style="height:16rem; width:13rem; border-radius:6px;">
 '''
         st.markdown(profile_image_html, unsafe_allow_html=True)
     with col2:
